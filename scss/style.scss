@@ -1,0 +1,270 @@
+//Шрифти
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+//Шрифт за замовчуванням
+$fontfamily: 'Montserrat';
+
+//Змінні
+$minwidth:320px;
+$mw:1230;
+$md1:$mw+12;
+$md2:992.98px;
+$md3:767.98px;
+$md4:479.98px;
+
+//Скидування стилів
+@import "nullstyle.scss";
+
+//Імпортовані стилі
+@import "mixins";
+@import "ui";
+@import "menu-burger";
+@import "slick-slider";
+@import "forms";
+
+//Оболонка
+.wrapper{width: 100%;min-height: 100%;overflow: hidden;
+	@include flexbox();
+	flex-direction: column;
+	&.loaded{}
+}
+
+//Основна сітка
+.container{max-width:$mw+px;margin: 0 auto;width: 100%;
+	// @media (max-width:$md1){max-width: 970px;}
+	// @media (max-width:$md2){max-width: 750px;}
+	// @media (max-width:$md3){max-width: none;padding: 0 10px;}
+	padding: 0px 10px;
+}
+
+//====================================================================================================
+.header {
+	// .header__content
+	&__content{
+		position: relative;
+		padding: 140px 0px 0px 0px;
+	}
+	// .header__menu
+	&__menu {
+		position: absolute;
+		width: 100%;
+		top: 45px;
+	}
+	// .header__slider
+	&__slider {
+	}
+	&__decor{
+		position: absolute;
+		background: rgba(246, 218, 204, 0.89);
+		border-radius: 50%;
+		z-index: -1;
+		&_small{
+			width: 50px;
+			height: 50px;
+			top: 49px;
+			right: 420px;
+		}
+		&_middle{
+			width: 100px;
+			height: 100px;
+			top: 137px;
+			right: 429px;
+		}
+		&_huge{
+			width: 400px;
+			height: 400px;
+			top: -30px;
+			right: 0px;
+		}
+	}
+	@media (max-width: 1100px){
+		&__content{
+			padding: 80px 0px 0px 0px;
+		}
+		&__menu{
+			top: 25px;
+		}
+	}
+}
+.menu {
+	// .menu__row
+	&__row{
+		@include flexbox();
+		align-items: center;
+	}
+	// .menu__column
+	&__column {
+		flex: 0 1 20%;
+		&:nth-child(2){
+			flex: 0 1 60%;
+		}
+	}
+
+	// .menu__logo
+	&__logo {
+		a{
+			font-weight: 500;
+			font-size: 18px;
+			color: #372317;
+		}
+	}
+
+	// .menu__icon
+	&__icon {
+	}
+
+	// .menu__body
+	&__body {
+		@media (max-width: 834px){
+		}
+	}
+
+	// .menu__list
+	&__list {
+		@include flexbox();
+		justify-content: center;
+		align-items: center;
+		li{
+			padding: 0px 25px;
+			&:first-child{
+				padding-left: 0;
+			}
+			&:last-child{
+				padding-right: 0;
+			}
+			@media (max-width: 1100px){
+				padding: 0px 10px;
+			}
+		}
+	}
+
+	// .menu__link
+	&__link {
+		font-size: 15px;
+		font-weight: 400;
+		color: #372317;
+		@include anim(0.3s,0s);
+		&:hover{
+			color: #EABEAB;
+		}
+	}
+
+	// .menu__icons
+	&__icons {
+		@include flexbox();
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	//.menu__item
+	&__item{
+		position: relative;
+		&:first-child{
+			width: 24px;
+			height: 20px;
+			margin: 0px 25px 0px 0px;
+		}
+		&:last-child{
+			width: 32px;
+			height: 32px;
+		}
+		a{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+		}
+		
+	}
+}
+
+.slider {
+	// .slider__body
+	&__body {
+	}
+
+	// .slider__item
+	&__item {
+	}
+
+	//.slider__container
+	&__container{
+		@include flexbox();
+	}
+
+	//.slider__content
+	&__content{
+		flex: 0 1 44%;
+		padding: 0px 0px 0px 1px;
+	}
+	// .slider__title
+	&__title {
+		margin: 0px 0px 20px 0px;
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 58.51px;
+		span{
+			color: #EABEAB;
+		}
+	}
+
+	// .slider__text
+	&__text {
+		margin: 0px 0px 60px 0px;
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 24px;
+	}
+	
+	// .slider__button
+	&__button {
+		display: block;
+		width: 211px;
+		height: 54px;
+		padding: 0px 32px;
+		border: 1px solid #372317;
+		border-radius: 20px 0px 0px 20px;
+		text-align: center;
+		@include anim(0.3s,0s);
+		span{
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 50px;
+			color: #372317;
+		}
+		&:hover{
+			background-color: rgba(246, 218, 204, 0.6);
+		}
+		&:active{
+			background-color: #EABEAB;
+			span{
+				color: #fff;
+			}
+		}
+	}
+
+	// .slider__image
+	&__image {
+		flex: 0 1 56%;
+		padding: 40px 0px 0px 124px;
+		img{
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 1100px){
+		&__title{
+			margin: 0px 0px 10px 0px;
+		}
+		&__text{
+			margin: 0px 0px 30px 0px;
+		}
+		&__image{
+			padding: 40px 0px 0px 50px;
+		}
+	}
+
+}
+

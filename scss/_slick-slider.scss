@@ -1,0 +1,65 @@
+// Слайдер
+.slick-slider{}
+// Слайдер запущен
+.slick-slider.slick-initialized{}
+// Слайдер с точками
+.slick-slider.slick-dotted{}
+// Ограничивающая оболочка
+.slick-list {
+    overflow: hidden;
+}
+// Лента слайдов
+.slick-track{
+    @include flexbox();
+}
+// Слайд
+.slick-slide{}
+// Слайд активный (показывается)
+.slick-slide.slick-active{}
+// Слайд основной
+.slick-slide.slick-current{}
+// Слайд по центру
+.slick-slide.slick-center{}
+// Клонированный слайд
+.slick-slide.slick-cloned{}
+// Стрелка 
+.slick-arrow{}
+// Стрелка влево
+.slick-arrow.slick-prev{}
+// Стрелка вправо 
+.slick-arrow.slick-next{}
+// Стрелка не активная
+.slick-arrow.slick-disabled{}
+// Точки (булиты)
+.slick-dots{}
+.slick-dots li{}
+// Активная точка
+.slick-dots li.slick-active{}
+// Элемент точки
+.slick-dots li button{}
+
+
+.header__slider{
+    .slick-arrow.slick-prev{
+        display: none !important;
+    }
+    .slick-arrow.slick-next{
+        position: absolute;
+        right: 0;
+        bottom: 32px;
+        font-size: 0;
+        width: 70px;
+        height: 61px;
+        background: url('../img/icons/header/arrow.svg') 50% 0 no-repeat;
+        
+        &::after{
+            content: 'Next slide!';
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 15.85px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
