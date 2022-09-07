@@ -20,7 +20,6 @@ function ibg(){
 }
 ibg();
 
-
 //slick slider
 $(document).ready(function(){
     $('.slider__body').slick({

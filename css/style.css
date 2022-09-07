@@ -155,6 +155,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0;
 }
 
+.header__slider {
+  position: relative;
+}
 .header__slider .slick-arrow.slick-prev {
   display: none !important;
 }
@@ -218,64 +221,79 @@ textarea.input {
   padding: 0px 10px;
 }
 
-.header__content {
-  position: relative;
-  padding: 140px 0px 0px 0px;
-}
-.header__menu {
-  position: absolute;
-  width: 100%;
-  top: 45px;
-}
-.header__decor {
-  position: absolute;
-  background: rgba(246, 218, 204, 0.89);
-  border-radius: 50%;
-  z-index: -1;
-}
-.header__decor_small {
-  width: 50px;
-  height: 50px;
-  top: 49px;
-  right: 420px;
-}
-.header__decor_middle {
-  width: 100px;
-  height: 100px;
-  top: 137px;
-  right: 429px;
-}
-.header__decor_huge {
-  width: 400px;
-  height: 400px;
-  top: -30px;
-  right: 0px;
-}
-@media (max-width: 1100px) {
-  .header__content {
-    padding: 80px 0px 0px 0px;
-  }
-  .header__menu {
-    top: 25px;
-  }
-}
-
-.menu__row {
+.header__row {
   display: flex;
   font-size: 0;
   align-items: center;
+  height: 100px;
 }
-.menu__column {
+.header__column {
   flex: 0 1 20%;
 }
-.menu__column:nth-child(2) {
+.header__column:nth-child(2) {
   flex: 0 1 60%;
 }
-.menu__logo a {
+.header__logo a {
   font-weight: 500;
   font-size: 18px;
   color: #372317;
 }
+.header__icons {
+  display: flex;
+  font-size: 0;
+  justify-content: flex-end;
+}
+.header__item {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.header__item:first-child {
+  margin: 0px 25px 0px 0px;
+}
+.header__item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.header__slider {
+  margin: 57px 0px 0px 0px;
+}
+.header__slider > span {
+  position: absolute;
+  top: -115px;
+  right: 417px;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  background: rgba(246, 218, 204, 0.5);
+  border-radius: 50%;
+}
+.header__slider::before, .header__slider::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+.header__slider::before {
+  top: -15px;
+  right: 434px;
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  background: rgba(246, 218, 204, 0.8);
+}
+.header__slider::after {
+  top: -200px;
+  right: -5px;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  background: rgba(246, 218, 204, 0.89);
+}
+
 .menu__list {
   display: flex;
   font-size: 0;
@@ -283,18 +301,13 @@ textarea.input {
   align-items: center;
 }
 .menu__list li {
-  padding: 0px 25px;
+  margin: 0px 25px;
 }
 .menu__list li:first-child {
-  padding-left: 0;
+  margin-left: 0;
 }
 .menu__list li:last-child {
-  padding-right: 0;
-}
-@media (max-width: 1100px) {
-  .menu__list li {
-    padding: 0px 10px;
-  }
+  margin-right: 0;
 }
 .menu__link {
   font-size: 15px;
@@ -309,40 +322,15 @@ textarea.input {
 .menu__link:hover {
   color: #EABEAB;
 }
-.menu__icons {
-  display: flex;
-  font-size: 0;
-  justify-content: flex-end;
-  align-items: center;
-}
-.menu__item {
-  position: relative;
-}
-.menu__item:first-child {
-  width: 24px;
-  height: 20px;
-  margin: 0px 25px 0px 0px;
-}
-.menu__item:last-child {
-  width: 32px;
-  height: 32px;
-}
-.menu__item a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
 
-.slider__container {
+.slider__row {
   display: flex;
   font-size: 0;
+  align-items: flex-end;
 }
 .slider__content {
-  flex: 0 1 44%;
-  padding: 0px 0px 0px 1px;
+  max-width: 45%;
+  padding: 0px 0px 25px 2px;
 }
 .slider__title {
   margin: 0px 0px 20px 0px;
@@ -383,26 +371,24 @@ textarea.input {
   background-color: rgba(246, 218, 204, 0.6);
 }
 .slider__button:active {
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
   background-color: #EABEAB;
 }
 .slider__button:active span {
   color: #fff;
 }
 .slider__image {
-  flex: 0 1 56%;
-  padding: 40px 0px 0px 124px;
+  margin: 0px 0px 0px 10.2%;
 }
 .slider__image img {
   max-width: 100%;
 }
-@media (max-width: 1100px) {
-  .slider__title {
-    margin: 0px 0px 10px 0px;
-  }
-  .slider__text {
-    margin: 0px 0px 30px 0px;
-  }
+@media (max-width: 992.98px) {
   .slider__image {
-    padding: 40px 0px 0px 50px;
+    margin: 0px 0px 0px 0px;
   }
 }
