@@ -275,7 +275,13 @@ $md4:428px;
 			color: #372317 !important;
 		}
 	}
-	@media (max-width:$md4){}
+	@media (max-width:$md4){
+		&__list{
+			li:nth-child(2){
+				display: none;
+			}
+		}
+	}
 }
 .slider {
 	// .slider__body

@@ -474,6 +474,12 @@ textarea.input {
     color: #372317 !important;
   }
 }
+@media (max-width: 428px) {
+  .menu__list li:nth-child(2) {
+    display: none;
+  }
+}
+
 .slider__row {
   display: flex;
   font-size: 0;
