@@ -475,6 +475,9 @@ textarea.input {
   }
 }
 @media (max-width: 428px) {
+  .menu__list {
+    width: 238px;
+  }
   .menu__list li:nth-child(2) {
     display: none;
   }

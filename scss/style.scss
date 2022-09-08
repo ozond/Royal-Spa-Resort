@@ -277,6 +277,7 @@ $md4:428px;
 	}
 	@media (max-width:$md4){
 		&__list{
+			width: 238px;
 			li:nth-child(2){
 				display: none;
 			}
