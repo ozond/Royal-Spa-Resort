@@ -1,3 +1,10 @@
+//button
+.btn{
+	display: inline-block;
+	border: 1px solid #372317;
+	border-radius: 20px 0px 0px 20px;
+}
+
 //<input>
 input[type=text],input[type=email],input[type=tel],textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
 .input{

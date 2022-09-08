@@ -3,13 +3,11 @@ $('.wrapper').addClass('loaded');
 $('.icon-menu').click(function(event) {
     $(this).toggleClass('active');
     $('.menu__list').toggleClass('active');
-    $('body').toggleClass('lock')
 });
-// $('.menu__link').click(function(event) {
-//     $('.icon-menu').toggleClass('active');
-//     $('.menu__body').toggleClass('active');
-//     $('body').remove('lock')
-// });
+$('.menu__list').click(function(event) {
+    $(this).toggleClass('active');
+    $('.icon-menu').toggleClass('active');
+});
 
 function ibg(){
     $.each($('.ibg'), function(index, val) {
@@ -21,15 +19,16 @@ function ibg(){
 ibg();
 
 //slick slider
-$(document).ready(function(){
-    $('.slider__body').slick({
-        arrows: true,
-        dots: false,
-        adaptiveHeight: true,
-        autoplay: true
+if($(window).width() > "834"){
+    $(document).ready(function(){
+        $('.slider__body').slick({
+            arrows: true,
+            dots: false,
+            adaptiveHeight: true,
+            autoplay: true
+        });
     });
-});
-
+}
 //Smooth scroll
 $(document).ready(function(){
     // Add smooth scrolling to all links
