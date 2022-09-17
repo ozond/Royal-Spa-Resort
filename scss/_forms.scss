@@ -1,8 +1,23 @@
 //button
 .btn{
 	display: inline-block;
-	border: 1px solid #372317;
 	border-radius: 20px 0px 0px 20px;
+	@include anim(0.3s,0s);
+	span{
+		font-size: 20px;
+		font-weight: 300;
+		color: #372317;
+	}
+	&:hover{
+		background-color: rgba(246, 218, 204, 0.6);
+	}
+	&:active{
+		@include anim(0.3s,0s);
+		background-color: #EABEAB;
+		span{
+			color: #fff;
+		}
+	}
 }
 
 //<input>

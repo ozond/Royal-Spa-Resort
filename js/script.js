@@ -21,14 +21,50 @@ ibg();
 //slick slider
 if($(window).width() > "834"){
     $(document).ready(function(){
-        $('.slider__body').slick({
+        $('.slider__body_h').slick({
             arrows: true,
             dots: false,
             adaptiveHeight: true,
-            autoplay: true
+            autoplay: true,
         });
     });
 }
+$(document).ready(function(){
+    $('.slider__body_c').slick({
+        arrows: true,
+        dots: true,
+        slidesToScroll: 2,
+        slidesToShow: 2,
+        speed: 1000,
+        responsive: [
+            {
+              breakpoint: 834,
+              settings: {
+                arrows: false,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+              }
+            },
+            {
+              breakpoint: 428,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
+    });
+});
+if($(window).width() < "1242"){
+    $(document).ready(function(){
+        $('.slider__body_o').slick({
+            arrows: false,
+            dots: true,
+        });
+    });
+}
+
 //Smooth scroll
 $(document).ready(function(){
     // Add smooth scrolling to all links
