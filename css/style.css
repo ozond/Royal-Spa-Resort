@@ -417,6 +417,10 @@ textarea.input {
   }
 }
 
+body {
+  color: #372317;
+}
+
 .header__row {
   display: flex;
   font-size: 0;
@@ -699,10 +703,7 @@ textarea.input {
   -o-transition: all 0.3s ease 0s;
 }
 .slider__body_h .slider__button span {
-  font-size: 20px;
-  font-weight: 300;
   line-height: 54px;
-  color: #372317;
 }
 .slider__body_h .slider__image {
   margin: 0px 0px 0px 124px;
@@ -847,7 +848,7 @@ textarea.input {
   -o-transition: all 1s ease 0s;
   transform: translate3d(-300px, 0, 0);
   opacity: 0;
-  visibility: 0;
+  visibility: hidden;
 }
 .slider__body_o {
   display: flex;
@@ -871,6 +872,7 @@ textarea.input {
   background-color: rgba(255, 215, 197, 0.1);
   position: relative;
   padding: 150px 0px 30px 0px;
+  border-radius: 20px 0 0 0;
 }
 .slider__body_o .slider__image {
   position: absolute;
@@ -944,7 +946,7 @@ textarea.input {
     margin: 0px auto;
   }
   .slider__body_o .slider__item {
-    margin: 0px 30px;
+    margin: 0px 15px;
   }
 }
 @media (max-width: 428px) {
@@ -966,6 +968,7 @@ textarea.input {
   font-size: 32px;
   font-weight: 400;
   line-height: 39.01px;
+  color: #372317;
   margin: 0px 0px 30px 0px;
 }
 @media (max-width: 834px) {
@@ -975,7 +978,7 @@ textarea.input {
 }
 @media (max-width: 428px) {
   .title {
-    margin: 0px 0px 24px 0px;
+    margin: 0px 0px 15px 0px;
   }
 }
 
@@ -983,6 +986,7 @@ textarea.input {
   font-size: 20px;
   font-weight: 300;
   line-height: 24px;
+  color: #372317;
   opacity: 0.8;
 }
 @media (max-width: 834px) {
@@ -1001,13 +1005,12 @@ textarea.input {
 }
 @media (max-width: 834px) {
   .category {
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
   }
 }
 
 .about {
   padding: 50px 0px 50px 0px;
-  color: #372317;
 }
 .about__row {
   display: flex;
@@ -1056,7 +1059,7 @@ textarea.input {
 }
 @media (max-width: 834px) {
   .about {
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
   }
   .about__body {
     padding: 0px 0px 0px 0px;
@@ -1163,12 +1166,13 @@ textarea.input {
 .offers__text {
   max-width: 915px;
   margin: 0px 0px 60px 0px;
+  color: #372317;
 }
 @media (max-width: 834px) {
   .offers {
-    padding: 30px 0px 30px 0px;
+    padding: 20px 0px 20px 0px;
   }
   .offers__text {
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 20px 0px;
   }
 }
