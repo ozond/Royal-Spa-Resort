@@ -156,7 +156,11 @@
                     <div class="about__row">
                         <div class="about__item">
                             <div class="about__image">
-                                <img src="img/about/01.png" alt="">
+                                <picture>
+                                    <source srcset="img/about/01.png" type="image/png" media="(min-width:1242px)">
+                                    <source srcset="img/about/02.png" type="image/png" media="(max-width:1241px)">
+                                    <img src="img/about/01.png" alt="">
+                                </picture>
                                 <a class="ibg" href="https://www.youtube.com/watch?v=6i1LrJhJNlQ" target="_blank"><img src="img/about/play.svg" alt=""></a>
                             </div>
                         </div>
