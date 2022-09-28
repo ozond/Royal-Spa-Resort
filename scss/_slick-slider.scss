@@ -113,6 +113,7 @@
         right: 13%;
         bottom: -8%;
         font-size: 0;
+        z-index: 5;
         width: 76px;
         height: 61px;
         background: url('../img/categories/arrow_r.svg') 50% 0 no-repeat;
@@ -126,7 +127,7 @@
             right: 0;
         }
         &:hover{
-            @include anim(0.7s,0s);
+            @include anim(0.3s,0s);
             background: url('../img/categories/arrow_r_m.svg') 50% 0 no-repeat;
         }
     }
@@ -149,7 +150,7 @@
             left: 0;
         }
         &:hover{
-            @include anim(0.7s,0s);
+            @include anim(0.3s,0s);
             background: url('../img/categories/arrow_l_m.svg') 50% 0 no-repeat;
         }
     }
