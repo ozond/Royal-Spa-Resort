@@ -25,11 +25,11 @@
                                 <nav class="menu__body">
                                     <ul class="menu__list">
                                         <li><a href="#" class="profile-clone">Profile</a></li>
-                                        <li><a href="#" class="menu__link">Home</a></li>
+                                        <li><a href="index.html" class="menu__link">Home</a></li>
                                         <li><a href="#about" class="menu__link">About us</a></li>
-                                        <li><a href="#" class="menu__link">Services</a></li>
-                                        <li><a href="#" class="menu__link">Stock</a></li>
-                                        <li><a href="#" class="menu__link">Contacts</a></li>
+                                        <li><a href="#special" class="menu__link">Stock</a></li>
+                                        <li><a href="#services" class="menu__link">Services</a></li>
+                                        <li><a href="#contacts" class="menu__link">Contacts</a></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -187,7 +187,7 @@
                     </div>
                 </div>
             </section>
-            <section class="special">
+            <section id="special" class="special">
                 <div class="offers">
                     <div class="container">
                         <h2 class="offers__title title">Special offers</h2>
@@ -258,14 +258,159 @@
                 <div class="discount">
                     <div class="container">
                         <div class="discount__body">
-                            <div class="discount__item"></div>
-                            <div class="discount__item"></div>
+                            <div class="discount__picture">
+                                <div class="discount__image">
+                                    <img src="img/offers/slutt.png" alt="">
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="discount__content">
+                                <div class="discount__title">We offer a <span>20% discount</span></div>
+                                <div class="discount__text text">New customers for any service when booking online!</div>
+                                <form action="#" class="discount__form">
+                                    <div class="discount__input">
+                                        <input autocomplete="off" type="tel" maxlength="13" name="form[]" placeholder="+380" class="input input_d">
+                                    </div>
+                                    <div class="discount__button">
+                                        <button type="submit" class="dis-btn">Get a discount</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="services" class="services">
+                <div class="container">
+                    <h2 class="services__title title">Services we provide</h2>
+                    <div class="services__items">
+                        <div class="services__item">
+                            <div class="services__image">
+                                <img src="img/services/01.jpg" alt="">
+                            </div>
+                            <div class="services__lable">Cosmetology</div>
+                            <div class="services__text">Beauticians at the Royal Spa Relax beauty salon will help you solve many aesthetic problems with the help of high-quality cosmetics and hardware procedures.</div>
+                            <div class="services__bottom">
+                                <a href="" class="services__button"><span>See details</span></a>
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image">
+                                <img src="img/services/02.jpg" alt="">
+                            </div>
+                            <div class="services__lable">Classic massage</div>
+                            <div class="services__text">If you want absolute relaxation, pleasant rest, relaxation of muscles and painful contractures, we offer a classic massage.</div>
+                            <div class="services__bottom">
+                                <a href="" class="services__button"><span>See details</span></a>
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image">
+                                <img src="img/services/03.jpg" alt="">
+                            </div>
+                            <div class="services__lable">Chocolate spa treatment</div>
+                            <div class="services__text">The Choco SPA chocolate treatment provides thorough hydration, nourishment and smoothing of the skin.</div>
+                            <div class="services__bottom">
+                                <a href="" class="services__button"><span>See details</span></a>
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image">
+                                <img src="img/services/04.jpg" alt="">
+                            </div>
+                            <div class="services__lable">Massage with hot stones</div>
+                            <div class="services__text">Stone massage is an ancient practice of harmonizing the work of body systems based on reflexology</div>
+                            <div class="services__bottom">
+                                <a href="" class="services__button"><span>See details</span></a>
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image">
+                                <img src="img/services/05.jpg" alt="">
+                            </div>
+                            <div class="services__lable">Hydromassage mini-pools</div>
+                            <div class="services__text"> Hydrotherapy is not a luxury, but a vital thing for people who lead a sedentary lifestyle. In terms of the level of impact on the body.</div>
+                            <div class="services__bottom">
+                                <a href="" class="services__button"><span>See details</span></a>
+                            </div>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__image">
+                                <img src="img/services/06.jpg" alt="">
+                            </div>
+                            <div class="services__lable">Spa manicure</div>
+                            <div class="services__text">Well-groomed hands are the key to the health of every woman. Every day we expose our hands to external influences in different seasons.</div>
+                            <div class="services__bottom">
+                                <a href="" class="services__button"><span>See details</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contacts" class="contacts">
+                <div class="container">
+                    <div class="contacts__row">
+                        <div class="contacts__column">
+                            <div class="contacts__image">
+                                <img src="img/contacts/whore.png" alt="">
+                            </div>
+                        </div>
+                        <div class="contacts__column">
+                            <h2 class="contacts__title title">Reservation online</h2>
+                            <div class="contacts__text text">Fill out the form and our managers will contact you as soon as possible</div>
+                            <form action="#" class="contacts__form form">
+                                <div class="form__row">
+                                    <div class="form__column">
+                                        <input type="text" class="input input_f" placeholder="Name">
+                                    </div>
+                                    <div class="form__column">
+                                        <input type="text" class="input input_f" placeholder="Surname">
+                                    </div>
+                                    <div class="form__column">
+                                        <select class="input input_f">
+                                            <option value="" disabled selected>Select</option>
+                                            <option value="">Oczko na lob</option>
+                                            <option value="">Huj w dupe</option>
+                                            <option value="">Gowno na jebalo</option>
+                                            <option value="">Lox</option>
+                                        </select>
+                                    </div>
+                                    <div class="form__column">
+                                        <input type="text" class="input input_f" placeholder="Phone number">
+                                    </div>
+                                </div>
+                                <div class="form__bottom">
+                                    <button class="form__button btn"><span>To reserve</span></button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__info">
+                        <ul class="footer__list list">
+                            <li class="list__item">+38 (096) -394-64-95</li>
+                            <li class="list__item">salonspa2022@gmail.com</li>
+                            <li class="list__item">Mon - Sun, 10 a.m. - 10 p.m.</li>
+                            <li class="list__item">Kharkiv, st. Sumskaya 128 </li>
+                        </ul>
+                        <div class="footer__socials">
+                            <a href="" class="footer__item"></a>
+                            <a href="" class="footer__item"></a>
+                            <a href="" class="footer__item"></a>
+                        </div>
+                    </div>
+                    <div class="footer__map">
+                        <a href="">
+                            <img src="img/footer/map.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

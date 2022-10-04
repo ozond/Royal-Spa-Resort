@@ -25,7 +25,7 @@ if($(window).width() > "834"){
             arrows: true,
             dots: false,
             adaptiveHeight: true,
-            autoplay: true,
+            autoplay: false,
         });
     });
 }
@@ -85,7 +85,7 @@ $(document).ready(function(){
             }, 800, function(){
 
             // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
+            // window.location.hash = hash;
             });
         } // End if
     });
